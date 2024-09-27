@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "rules-btn") {
-
+                document.getElementById("rules-screen-hidden").style.display = "flex";
             } else {
                 let userChoice = this.getAttribute("data-type");
                 alert(`You clicked ${userChoice}.`);
@@ -15,5 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    
+    let closingButton = document.getElementById("close");
+    closingButton.addEventListener("click", function(){
+        document.getElementById("rules-screen-hidden").style.display = "none";
+    })
 })
