@@ -2,26 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /*Set default style*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Oswald", sans-serif;
 }
-/*Game Area*/
-main{
-    width:100vw;
-    height:100vh;
-    background:linear-gradient(#0d2b52,#174685);
-    display:flex;
+
+/*Score Area*/
+main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#0d2b52, #174685);
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#header{
+#header {
     margin-top: 2rem;
     width: 80%;
     max-width: 800px;
@@ -35,16 +36,16 @@ main{
     box-shadow: rgb(84, 157, 240) 2px 10px 10px -10px;
 }
 
-.logo{
+.logo {
     margin-left: 10px;
     line-height: 2rem;
     color: #fff;
 }
 
-.scoreboard{
+.scoreboard {
     width: 300px;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -53,9 +54,9 @@ main{
 
 }
 
-.score-container{
+.score-container {
     width: 130px;
-    height:130px;
+    height: 130px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -64,14 +65,115 @@ main{
     justify-content: center;
 }
 
-.score-container p{
+.score-container p {
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
+/*Game area*/
+.game-area {
+    margin: 20px;
+    width: 90%;
+    max-width: 850px;
 
-@media (max-width: 490px){
-    .score-container{
-        height:100px;
+    height: 350px;
+
+
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 85%;
+
+}
+
+.btn {
+    margin-top: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: rgb(84, 157, 240) 2px 10px 10px -10px;
+    transition: all 0.5s ease;
+    transform: scale(1);
+}
+
+.btn--red {
+    border: 6px solid #ad0e08;
+
+}
+
+.btn--red:hover {
+    background-color: #8b0000;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn--blue {
+    border: 6px solid #2422a8;
+}
+
+.btn--blue:hover {
+    background-color: #00008b;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn--green {
+    border: 6px solid #097028;
+}
+
+.btn--green:hover {
+    background-color: #006400;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn--black {
+    border: 6px solid #242323;
+}
+
+.btn--black:hover {
+    background-color: #000;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn--yellow {
+    border: 6px solid #d3c60f;
+}
+
+.btn--yellow:hover {
+    background-color: rgb(207, 152, 13);
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn i {
+    font-size: 50px;
+}
+
+
+@media (max-width: 505px) {
+    .score-container {
+        height: 85px;
+        width: 80px;
+    }
+
+    #header {
+        height: 180px;
+    }
+
+    .score-container p {
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 12px;
+        line-height: 1.5rem;
     }
 }
