@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "rules-btn") {
-                alert("You clicked rules");
+
             } else {
                 let userChoice = this.getAttribute("data-type");
                 alert(`You clicked ${userChoice}.`);
             }
         })
     }
+
+    
 })
