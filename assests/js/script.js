@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 let userChoice = this.getAttribute("data-type");
                 let computerChoice  = getCompChoice();
-                console.log(computerChoice)
+                let result = getResult(userChoice,computerChoice);
+                
+                document.getElementById("result").textContent = result;
+                document.getElementById("user-choice").textContent = userChoice;
+                document.getElementById("comp-choice").textContent = computerChoice;
             }
         })
         
@@ -27,5 +31,25 @@ document.addEventListener("DOMContentLoaded", function () {
 function getCompChoice(){
     const choices = ["rock","paper", "scissors","lizard","spock"];
     return choices[Math.floor(Math.random()*5)];
+
+}
+
+function getResult(userChoice,computerChoice){
+    const outcomes = {
+        rock: { scissors: 'crushes', lizard: 'crushes' },
+        paper: { rock: 'covers', spock: 'disproves' },
+        scissors: { paper: 'cuts', lizard: 'decapitates' },
+        lizard: { paper: 'eats', spock: 'poisons' },
+        spock: { scissors: 'smashes', rock: 'vaporizes' }
+    };
+
+    if(userChoice === computerChoice){
+        return "Draw!";
+    } else if(outcomes[userChoice][computerChoice]){
+        return "Win!"
+    } else{
+        return "Lose!"
+    }
+
 
 }
