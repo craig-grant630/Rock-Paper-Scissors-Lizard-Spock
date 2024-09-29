@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("rules-screen-hidden").style.display = "flex";
             } else {
                 let userChoice = this.getAttribute("data-type");
-                alert(`You clicked ${userChoice}.`);
+                let computerChoice  = getCompChoice();
+                console.log(computerChoice)
             }
         })
+        
     }
 
     let closingButton = document.getElementById("close");
@@ -20,3 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("rules-screen-hidden").style.display = "none";
     })
 })
+
+
+function getCompChoice(){
+    const choices = ["rock","paper", "scissors","lizard","spock"];
+    return choices[Math.floor(Math.random()*5)];
+
+}
