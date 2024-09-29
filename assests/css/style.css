@@ -75,13 +75,15 @@ main {
     margin: 20px;
     width: 90%;
     max-width: 850px;
-    height: 350px;
+    height: 100%;
 }
 
 .hand-result{
     text-align: center;
     width:100%;
     text-transform: uppercase;
+    height:15%;
+    margin-top: 20px;
 }
 
 .controls {
@@ -96,8 +98,8 @@ main {
 
 .btn {
     margin-top: 5px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     box-shadow: rgb(84, 157, 240) 2px 10px 10px -10px;
     transition: all 0.5s ease;
@@ -186,8 +188,8 @@ main {
 }
 
 .game-rules{
-    height: 400px;
-    width:400px;
+    height: 60%;
+    width:50%;
     position:absolute;
     z-index:4;
     align-items: center;
@@ -236,5 +238,32 @@ main {
     .logo {
         font-size: 12px;
         line-height: 1.5rem;
+    }
+
+    .game-rules{
+        height: 60%;
+        width:80%;
+    }
+
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+
+    .hand-result{
+        
+        height:60px;
+    }
+}
+/*Talets screens and above*/
+@media (min-width: 768px) {
+
+    .btn{
+        height:200px;
+        width:200px;
+    }
+
+    .hand-result{
+        font-size: 30px;
     }
 }
