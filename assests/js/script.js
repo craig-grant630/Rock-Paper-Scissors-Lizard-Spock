@@ -9,32 +9,36 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "rules-btn") {
                 document.getElementById("rules-screen-hidden").style.display = "flex";
             } else {
+
                 let userChoice = this.getAttribute("data-type");
-                let computerChoice  = getCompChoice();
-                let result = getResult(userChoice,computerChoice);
-                
+                let computerChoice = getCompChoice();
+                let result = getResult(userChoice, computerChoice);
+
+                console.log(computerChoice)
                 document.getElementById("result").textContent = result;
                 document.getElementById("user-choice").textContent = userChoice;
                 document.getElementById("comp-choice").textContent = computerChoice;
+
+
             }
         })
-        
+
     }
 
     let closingButton = document.getElementById("close");
-    closingButton.addEventListener("click", function(){
+    closingButton.addEventListener("click", function () {
         document.getElementById("rules-screen-hidden").style.display = "none";
     })
 })
 
 
-function getCompChoice(){
-    const choices = ["rock","paper", "scissors","lizard","spock"];
-    return choices[Math.floor(Math.random()*5)];
+function getCompChoice() {
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    return choices[Math.floor(Math.random() * 5)];
 
 }
 
-function getResult(userChoice,computerChoice){
+function getResult(userChoice, computerChoice) {
     const outcomes = {
         rock: { scissors: 'crushes', lizard: 'crushes' },
         paper: { rock: 'covers', spock: 'disproves' },
@@ -43,13 +47,23 @@ function getResult(userChoice,computerChoice){
         spock: { scissors: 'smashes', rock: 'vaporizes' }
     };
 
-    if(userChoice === computerChoice){
+    if (userChoice === computerChoice) {
         return "Draw!";
-    } else if(outcomes[userChoice][computerChoice]){
+    } else if (outcomes[userChoice][computerChoice]) {
+        incrementScore();
         return "Win!"
-    } else{
+    } else {
+        incrementCompScore();
         return "Lose!"
     }
+}
 
+function incrementScore() {
+    let oldUserScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++oldUserScore;
+}
 
+function incrementCompScore() {
+    let oldCompScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldCompScore;
 }
