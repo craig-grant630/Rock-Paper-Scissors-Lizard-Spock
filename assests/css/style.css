@@ -168,7 +168,7 @@ main {
 
 .hand-result{
     width:80%;
-    height:80%;
+    height:200px;
     text-transform: uppercase;
     text-align: center;
     display:flex;
@@ -177,8 +177,8 @@ main {
     padding-bottom: 40px;
 }
 
-.result-messgae{
-    font-size: 20px;
+.result-message{
+    font-size: 1.5rem;
 }
 
 /*Rules page hidden until clicked*/
@@ -198,6 +198,8 @@ main {
 .game-rules{
     height: 60%;
     width:50%;
+    max-width:500px;
+    max-height: 600px;
     position:absolute;
     z-index:4;
     align-items: center;
@@ -260,24 +262,32 @@ main {
     .game-area{
         height:400px;
     }
+    
+    .rules-button{
+        bottom: 20px;
+        left:20px;
+    }
 
-
+    .rulesb{
+        height:35px;
+        width:60px;
+    }
     
 }
 /*Talets screens and above*/
 @media (min-width: 768px) {
 
     .btn{
-        height:165px;
-        width:165px;
+        height:155px;
+        width:155px;
     }
 
-    .hand-result{
-        font-size: 25px;
-    }
     .controls{
-        gap:10px;
+        gap:7px;
     }
 
+    .result-message{
+        font-size: 40px;
+    }
     
 }
