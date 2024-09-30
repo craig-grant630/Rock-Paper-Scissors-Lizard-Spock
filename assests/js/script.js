@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 let computerChoice = getCompChoice();
                 let result = getResult(userChoice, computerChoice);
 
-                console.log(computerChoice)
+                let userScore =incrementCompScore(result);
+                let compScore= incrementScore(result);
+
                 document.getElementById("result").textContent = result;
                 document.getElementById("user-choice").textContent = userChoice;
                 document.getElementById("comp-choice").textContent = computerChoice;
 
-
+                gameOver(userScore,compScore)
             }
         })
 
@@ -50,20 +52,35 @@ function getResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "Draw!";
     } else if (outcomes[userChoice][computerChoice]) {
-        incrementScore();
         return "Win!"
     } else {
-        incrementCompScore();
         return "Lose!"
+    }
+
+}
+
+
+function incrementScore(result) {
+    if (result === "Win!"){
+    let oldUserScore = parseInt(document.getElementById("user-score").innerText);
+    document.getElementById("user-score").innerText = ++oldUserScore;
+    return oldUserScore
+}
+}
+
+function incrementCompScore(result) {
+    if (result === "Lose!"){
+    let oldCompScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldCompScore;
+    return oldCompScore
     }
 }
 
-function incrementScore() {
-    let oldUserScore = parseInt(document.getElementById("user-score").innerText);
-    document.getElementById("user-score").innerText = ++oldUserScore;
-}
+function gameOver(userScore, compScore){
 
-function incrementCompScore() {
-    let oldCompScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldCompScore;
+    if(compScore === 5 || userScore === 5){
+        document.getElementById("computer-score").innerText = 0;
+        document.getElementById("user-score").innerText = 0;
+        alert("Over");
+    }
 }
