@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "rules-btn") {
                 document.getElementById("rules-screen-hidden").style.display = "flex";
-            } else {
+            }  else {
 
                 let userChoice = this.getAttribute("data-type");
                 let computerChoice = getCompChoice();
@@ -26,11 +26,17 @@ document.addEventListener("DOMContentLoaded", function () {
         })
 
     }
+    let closingButtonTwo = document.getElementById("close-two");
+    closingButtonTwo.addEventListener("click", function () {
+        document.getElementById("game-screen-hidden").style.display = "none";
+    })
 
     let closingButton = document.getElementById("close");
     closingButton.addEventListener("click", function () {
         document.getElementById("rules-screen-hidden").style.display = "none";
     })
+
+    
 })
 
 
@@ -84,14 +90,16 @@ function gameOver(userScore, compScore){
         document.getElementById("result").textContent = "";
         document.getElementById("user-choice").textContent = "";
         document.getElementById("comp-choice").textContent = "";
-
-        alert("Computer Wins");
+        document.getElementById("game-screen-hidden").style.display = "flex";
+        document.getElementById("gameover-message").textContent = "Computer Wins";
+        
     } else if(userScore === 5){
         document.getElementById("computer-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
         document.getElementById("result").textContent = "";
         document.getElementById("user-choice").textContent = "";
         document.getElementById("comp-choice").textContent = "";
-        alert("You Win");
+        document.getElementById("game-screen-hidden").style.display = "flex";
+        document.getElementById("gameover-message").textContent = "User Wins";
     }
 }
