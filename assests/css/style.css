@@ -291,3 +291,26 @@ main {
     }
     
 }
+
+@media (max-width: 350px) {
+
+    .btn{
+        height:95px;
+        width:95px;
+    }
+
+    .controls{
+        gap:3px;
+    }
+
+    .result-message{
+        font-size: 25px;
+    }
+    
+    .hand-result{
+        width:100%;
+        height:150px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
