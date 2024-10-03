@@ -78,4 +78,22 @@ The game Rock Paper Scissors Lizard Spock is an expanded iteration of the tradit
 ### **Typography** ###
 
 - Oswald: Imported from Google Fonts, applied to the entire body of the document.
-- All icons sourced from ![Font Aewsome](https://fontawesome.com/)
+- All icons sourced from [Font Aewsome](https://fontawesome.com/)
+
+## **Features** ##
+
+### **Game Screen** ###
+
+The Rock Paper Scissors Lizard Spock game screen is designed to captivate and guide users through the game effortlessly. At the top, the game's name is showcased in a unique, stacked style, drawing attention to the header. Just below, a dynamic scoreboard keeps track of the user and computer scores. The central game area features five vibrant buttons, each representing a hand gesture—rock, paper, scissors, lizard, and Spock—with easily recognizable icons. Upon clicking a button, the user's choice, the computer's choice, and the round's outcome are promptly displayed. Moreover, the interface includes a rules button to offer new players an overlay with the game rules, as well as a concealed game over screen to notify users when the game concludes, ensuring an intuitive and engaging gaming experience.
+
+<details><summary>Game Screen Images</summary>
+  
+| Desktop                                                                            | Mobile                                                                           |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| <img src="./assests/images/home-screen-desktop.webp" alt="desktop image"/>            | <img src="./assests/images/home-screen-mobile.webp" alt="mobile image"/> |
+
+ </details>
+
+ ## **Testing** ##
+
+
