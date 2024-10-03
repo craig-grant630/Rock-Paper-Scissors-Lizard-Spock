@@ -85,21 +85,21 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 
 ### **Game Screen** ###
 
-
-  
 | Desktop                                                                            | Mobile                                                                           |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | <img src="./assests/images/home-screen-desktop.webp" alt="desktop image"/>            | <img src="./assests/images/home-screen-mobile.webp" alt="mobile image"/> |
 
-
- 
-
 ### **Rules Screen** ###
 
-![Rules Screen](assests/images/rules-screen.webp)
+![Rules Screen](assests/images/rules-image.webp)
 
 
 
  ## **Testing** ##
+ 
+- Consistently tested Rock Paper Scissors Lizard Spock across different browsers, including Chrome, Firefox, Safari, and Edge.
+- Ensured that the layout adapts properly by testing responsiveness on various devices such as desktops, tablets, and mobile phones, as well as different screen sizes.
+
+## **Manual Testing** ##
 
 
