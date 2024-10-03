@@ -61,8 +61,9 @@ The game Rock Paper Scissors Lizard Spock is an expanded iteration of the tradit
 
 - Dark Blue: #0d2b52
 - Lighter Blue: #174685
-- 
+
 ![Reposivity](assests/images/background-colors.webp)
+
 **Buttons:**
 
 - White: #ffffff (used for score containers)
@@ -73,3 +74,8 @@ The game Rock Paper Scissors Lizard Spock is an expanded iteration of the tradit
 - Blue: #2422a8 (for the Spock button)
 
 ![Reposivity](assests/images/buttons-color.webp)
+
+### **Typography** ###
+
+- Oswald: Imported from Google Fonts, applied to the entire body of the document.
+- All icons sourced from ![Font Aewsome](https://fontawesome.com/)
