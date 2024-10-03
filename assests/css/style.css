@@ -294,6 +294,11 @@ main {
 
 @media (max-width: 350px) {
 
+    main {
+        width: 100vw;
+        height: 700px;
+        
+    }
     .btn{
         height:95px;
         width:95px;
@@ -313,4 +318,6 @@ main {
         text-align: center;
         padding-bottom: 40px;
     }
+
+
 }
