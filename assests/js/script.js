@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 let computerChoice = getCompChoice();
                 let result = getResult(userChoice, computerChoice);
 
-                let userScore =incrementCompScore(result);
-                let compScore= incrementScore(result);
+                let compScore =incrementCompScore(result);
+                let userScore= incrementScore(result);
 
                 document.getElementById("result").textContent = result;
                 document.getElementById("user-choice").textContent = userChoice;
@@ -78,9 +78,20 @@ function incrementCompScore(result) {
 
 function gameOver(userScore, compScore){
 
-    if(compScore === 5 || userScore === 5){
+    if(compScore === 5){
         document.getElementById("computer-score").innerText = 0;
         document.getElementById("user-score").innerText = 0;
-        alert("Over");
+        document.getElementById("result").textContent = "";
+        document.getElementById("user-choice").textContent = "";
+        document.getElementById("comp-choice").textContent = "";
+
+        alert("Computer Wins");
+    } else if(userScore === 5){
+        document.getElementById("computer-score").innerText = 0;
+        document.getElementById("user-score").innerText = 0;
+        document.getElementById("result").textContent = "";
+        document.getElementById("user-choice").textContent = "";
+        document.getElementById("comp-choice").textContent = "";
+        alert("You Win");
     }
 }
