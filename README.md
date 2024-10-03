@@ -53,6 +53,23 @@ The game Rock Paper Scissors Lizard Spock is an expanded iteration of the tradit
 - Casual players seeking an easy-to-learn game to pass the time.
 - Fans of the original “Big Bang Theory” reference and those who appreciate quirky, pop culture-inspired games.
 
+## Design ##
 
+### **Colours** ###
 
+**Background Gradient:**
 
+- Dark Blue: #0d2b52
+- Lighter Blue: #174685
+- 
+![Reposivity](assests/images/background-colors.webp)
+**Buttons:**
+
+- White: #ffffff (used for score containers)
+- Red: #ad0e08 (for the rock button)
+- Black: #242323 (for the paper button)
+- Yellow: #d3c60f (for the scissors button)
+- Green: #097028 (for the lizard button)
+- Blue: #2422a8 (for the Spock button)
+
+![Reposivity](assests/images/buttons-color.webp)
