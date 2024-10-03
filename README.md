@@ -38,4 +38,21 @@ The game Rock Paper Scissors Lizard Spock is an expanded iteration of the tradit
   
 ### Winning the Game ###
 - The game continues until either you or the computer reaches a score of 5.
-- End of Game: When someone wins, a game over message will appear
+- End of Game: When someone wins, a game over message will appear.
+
+## User Experience ##
+
+## Project Goals ##
+
+- Design an intuitive interface that is easy to use.
+- Improve the user experience by providing visual feedback for each action (button clicks, game results) to make the game more engaging.
+- Mobile Compatibility: Make sure the game is responsive and playable on a variety of devices, including phones, tablets, and computers.
+
+## Target Audience ##
+
+- Casual players seeking an easy-to-learn game to pass the time.
+- Fans of the original “Big Bang Theory” reference and those who appreciate quirky, pop culture-inspired games.
+
+
+
+
