@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assests/css/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests/css/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assests/css/images/favicon-16x16.png">
+    <link rel="manifest" href="assests/css/images/site.webmanifest">
     <title>Rock Paper Scissors Lizard Spock</title>
     <!--Link for stylesheet-->
     <link rel="stylesheet" href="assests/css/style.css">
@@ -41,24 +45,25 @@
 
         <!--Pick hand selection section-->
         <div class="game-area">
-            
+
             <div class="controls">
                 <button class="btn  btn--red" data-type="rock"><i class="fa-solid fa-hand-back-fist"></i></button>
-                <button class="btn  btn--black" data-type = "paper"><i class="fa-solid fa-hand"></i></button>
-                <button class="btn  btn--yellow" data-type = "scissors"><i class="fa-solid fa-hand-scissors"></i></button>
-                <button class="btn  btn--green" data-type = "lizard"><i class="fa-solid fa-hand-lizard"></i></button>
-                <button class="btn  btn--blue" data-type = "spock"><i class="fa-solid fa-hand-spock"></i></button>
+                <button class="btn  btn--black" data-type="paper"><i class="fa-solid fa-hand"></i></button>
+                <button class="btn  btn--yellow" data-type="scissors"><i class="fa-solid fa-hand-scissors"></i></button>
+                <button class="btn  btn--green" data-type="lizard"><i class="fa-solid fa-hand-lizard"></i></button>
+                <button class="btn  btn--blue" data-type="spock"><i class="fa-solid fa-hand-spock"></i></button>
             </div>
         </div>
-        
+
         <div class="hand-result">
-                <h2 class="result-message">
-                    You chose:<span id="user-choice"></span> 
-                    <br>
-                    Computer chose: <span id="comp-choice"></span>
-                    <br>
-                    Result:<span id="result"> Win/Lose</span></h2>
-            </div>
+            <h2 class="result-message">
+                You chose:<span id="user-choice"></span>
+                <br>
+                Computer chose: <span id="comp-choice"></span>
+                <br>
+                Result:<span id="result"> Win/Lose</span>
+            </h2>
+        </div>
         <!--Rules Button-->
         <div class="rules-button">
             <button class="rulesb" data-type="rules-btn">Rules</button>
@@ -68,16 +73,16 @@
 
         <div id="rules-screen-hidden">
             <div class="game-rules">
-                <div id="close" data-type = "close-btn"><i class="fa-solid fa-x"></i></div>
+                <div id="close" data-type="close-btn"><i class="fa-solid fa-x"></i></div>
                 <img src="assests/images/rules-image.webp" alt="Rules" class="g-rules">
             </div>
         </div>
 
         <div id="game-screen-hidden">
             <div class="message">
-                <div id="close-two" data-type = "close-btn-two"><i class="fa-solid fa-x"></i></div>
+                <div id="close-two" data-type="close-btn-two"><i class="fa-solid fa-x"></i></div>
                 <h2>Game Over</h2>
-                <h4 id ="gameover-message"></h4>
+                <h4 id="gameover-message"></h4>
             </div>
         </div>
 
