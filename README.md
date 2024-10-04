@@ -141,3 +141,27 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 - To fix the issue, variables were defined after a choice button was clicked to increment the scores, so that the gameOver funtion can be called and the scores can be used to finish the game.
 
 ![Bug Fix](assests/images/bug-fix.webp)
+
+### Validator Testing ###
+
+**HTML - W3C Validator**
+
+![Bug Fix](assests/images/html-valid.webp)
+
+- The warning can be ignored as is filled with content when the user either wins or loses the game.
+- No erros have been detected.
+
+**CSS - (Jigsaw) Validator**
+
+![Bug Fix](assests/images/css-valid.webp)
+
+- The warning can be ignored as the imoprted styles are from [google fonts](https://fonts.google.com/).
+- No errors were detected.
+
+**JavaScript - JShint Validator**
+
+![Bug Fix](assests/images/js-hint.webp)
+
+- No erros were detected.
+
+
