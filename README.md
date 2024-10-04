@@ -168,3 +168,37 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 
 ![Bug Fix](assests/images/lighthouse.webp)
 
+- To improve accessability we can add names for the choices buttons - these names can appear under the button for readability.
+
+## Deployment ##
+
+**Manual Deployment**
+
+Rock Paper Lizard Spock has been deployed to Github pages as follows:
+
+- Go to **Settings** tab in the Github Repository.
+- From the **"Code and automation"** section, select **pages**.
+- Set source to 'Deploy from Branch', make sure **Main branch** is selected.
+- Under Branch, click **save**.
+- The page will be automatically refreshed, in the **Enviroments** section you will be able to veiw the live site.
+  
+
+ The live site can be found: https://craig-grant630.github.io/Rock-Paper-Scissors-Lizard-Spock/
+
+ **Forking Repository**
+- Go to the GitHub repository.
+- Select **"Fork"** button on the page.
+- This will create a copy of the repository in your GitHub account.
+
+**Clone Repository**
+
+- Go to the GitHub Repository.
+- Click the Code button and copy the link.
+- In Gitpod, type "git clone **repository link copied**.git" and enter.
+
+## Credits
+
+- The inspiration for design of the buttons were taken from CI [Love Maths](https://craig-grant630.github.io/Love-maths/)
+
+
+
