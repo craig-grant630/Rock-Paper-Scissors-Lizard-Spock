@@ -21,23 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("user-choice").textContent = userChoice;
                 document.getElementById("comp-choice").textContent = computerChoice;
 
-                gameOver(userScore,compScore)
+                gameOver(userScore,compScore);
             }
-        })
+        });
 
     }
     let closingButtonTwo = document.getElementById("close-two");
     closingButtonTwo.addEventListener("click", function () {
         document.getElementById("game-screen-hidden").style.display = "none";
-    })
+    });
 
     let closingButton = document.getElementById("close");
     closingButton.addEventListener("click", function () {
         document.getElementById("rules-screen-hidden").style.display = "none";
-    })
+    });
 
     
-})
+});
 
 
 function getCompChoice() {
@@ -58,9 +58,9 @@ function getResult(userChoice, computerChoice) {
     if (userChoice === computerChoice) {
         return "Draw!";
     } else if (outcomes[userChoice][computerChoice]) {
-        return "Win!"
+        return "Win!";
     } else {
-        return "Lose!"
+        return "Lose!";
     }
 
 }
@@ -70,7 +70,7 @@ function incrementScore(result) {
     if (result === "Win!"){
     let oldUserScore = parseInt(document.getElementById("user-score").innerText);
     document.getElementById("user-score").innerText = ++oldUserScore;
-    return oldUserScore
+    return oldUserScore;
 }
 }
 
@@ -78,7 +78,7 @@ function incrementCompScore(result) {
     if (result === "Lose!"){
     let oldCompScore = parseInt(document.getElementById("computer-score").innerText);
     document.getElementById("computer-score").innerText = ++oldCompScore;
-    return oldCompScore
+    return oldCompScore;
     }
 }
 
