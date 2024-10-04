@@ -164,4 +164,7 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 
 - No erros were detected.
 
+## Google Lighthouse ##
+
+![Bug Fix](assests/images/lighthouse.webp)
 
