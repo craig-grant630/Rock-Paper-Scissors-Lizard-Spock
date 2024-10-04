@@ -91,9 +91,11 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 
 ### **Rules Screen** ###
 
-![Rules Screen](assests/images/rules-image.webp)
+![Rules Screen](assests/images/rules-screen.webp)
 
+### **Game Over Screen** ###
 
+![Game Over Screen](assests/images/game-over-screen.webp)
 
  ## **Testing** ##
  
@@ -101,5 +103,32 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 - Ensured that the layout adapts properly by testing responsiveness on various devices such as desktops, tablets, and mobile phones, as well as different screen sizes.
 
 ## **Manual Testing** ##
+
+### **Game Screen** ###
+
+**Choice Buttons - Click**
+
+- Buttons: Rock, Paper, Scissors, Lizard, Spock
+- Verify that the user's choice is correctly displayed.
+- Check that the computer's choice is randomly selected and displayed.
+- Confirm that the result (win/lose) is displayed correctly based on the game's rules.
+- Ensure that the scores for both the user and the computer update correctly.
+- Once the scores reach five make sure game over screen displays and data resets.
+
+**Rules Button - Click**
+
+- Verify that the rules overlay screen becomes visible.
+- Check that the rules image is displayed correctly.
+- Ensure the close button on the rules screen works and hides the overlay when clicked.
+
+### Rules Screen ###
+
+**Closing Button - Click**
+- verify the closing buttong hides the overlay when clicked
+
+### Game Over Screen ###
+
+**Closing Button - Click**
+- verify the closing buttong hides the game over screen.
 
 
