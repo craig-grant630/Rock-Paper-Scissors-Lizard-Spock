@@ -131,4 +131,13 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 **Closing Button - Click**
 - verify the closing buttong hides the game over screen.
 
+## Bugs ##
 
+
+**Solved Bugs**
+
+- When implementing the game Over function the code would not finish the game after the scores for the user and the computer reached five.
+- The incrementedScore functions were being called in the getresult function and the scores could not be read - this would mean the gameOver would not finish the game.
+- To fix the issue, variables were defined after a choice button was clicked to increment the scores, so that the gameOver funtion can be called and the scores can be used to finish the game.
+
+![Bug Fix](assests/images/bug-fix.webp)
