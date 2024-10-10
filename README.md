@@ -91,7 +91,7 @@ The Rock Paper Scissors Lizard Spock game screen is designed to captivate and gu
 
 ### **Rules Screen** ###
 
-![Rules Screen](assests/images/rules-screen.webp)
+![Rules Screen](assests/images/rules-screen-two.webp)
 
 ### **Game Over Screen** ###
 
